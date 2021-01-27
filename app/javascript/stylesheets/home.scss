@@ -1,0 +1,42 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.home-page {
+  background-image: url(../images/pink.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  position: fixed;
+  padding:0;
+  left: 0;
+  margin-top: 68px;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto; 
+}
+.home-photo-background {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  border: 5px solid #FFF;
+  border-radius: 10px;
+}
+.home-photo {
+  top: 30px;
+  left: 8%;
+  height: 90px;
+  position: absolute;
+  max-width: auto;
+  height: auto;
+  width: 90%;
+  
+}
+.resume-title {
+  color: rgb(226, 159, 223);
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+} 
+.photo-content {
+  margin-right: 20px;
+}

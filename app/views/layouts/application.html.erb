@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TienNgPortfolioSite</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tien's Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= favicon_pack_tag 'favicon/favicon-16x16.png' %>
   </head>
 
   <body>
+    <header>
+      <%= render 'layouts/navigation_bar' %>
+    </header>
     <%= yield %>
   </body>
 </html>
