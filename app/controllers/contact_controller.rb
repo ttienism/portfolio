@@ -6,6 +6,7 @@ class ContactController < ApplicationController
   def create
     contact = Contact.create(contacts_params)
     if contact
+      ContactMailer.notify_contact(contact).deliver_later
       redirect_to root_path
     end
   end
