@@ -1,7 +1,7 @@
 # README
 
 This is a personal project - building my own portfolio site with Ruby on Rails on MacOS Big Sur. 
-This app is deployed to heroku at https://git.heroku.com/young-garden-73479.git.
+This app is deployed to heroku at https://young-garden-73479.herokuapp.com.
 
 ## Set up
 
