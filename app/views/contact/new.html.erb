@@ -1,0 +1,20 @@
+<div class="page contact-content">
+  <h1 class="resume-title">contact me!</h1>
+  <div class="row">
+    <%= form_with(url: contact_path, method: :post, class: 'col-sm-7') do |f| %>
+      <div>
+        <%= f.label :subject %>
+        <%= f.text_field :subject, class: 'field' %>
+      </div>
+      <div>
+        <%= f.label :email %>
+        <%= f.text_field :email, class: 'field', :required => true %>
+      </div>
+      <div>
+        <%= f.label :message %>
+        <%= f.text_area :message, class: 'textarea__long'%>
+      </div>
+      <%= f.submit class: "button" %>
+    <% end %>
+  </div>
+</div>

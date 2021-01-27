@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resource :home, only: [ :index ]
   
-  resource :contact, only: [ :show ], controller: 'contact'
+  resource :contact, only: [ :new, :create ], controller: 'contact'
   resource :about, only: [ :show ], controller: 'about' do
     put 'download'
   end
