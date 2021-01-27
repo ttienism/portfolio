@@ -1,14 +1,46 @@
-<div class="home-page">
+<div class="page">
   <div class="row">
-    
-    <div class="d-block col-sm">
-      <div class="modified-card">
-        <h3>Experience</h3>
-        <h5>Software devloper intern</h5>
-        <p>Develop the company web application with Ruby on Rails. Key responsibilities are: 
-        <br>• Add new features, mostly on the back-end.
-        <br>• Make tests (unit tests and system test).
-        <br>• Tech-lead of the intern development team.</p>
+    <div class="col-sm">
+      <h1 class="resume-title">tien nguyen</h1>
+      <div class="row about-content">
+        <div class="col-sm-7">
+          <p class="title"><%= icon_for('file-download', :class => 'icon')%>Download the pdf version of my resume <%= link_to 'here', download_about_path, method: :put %>!</p>
+          <h3 class="title"><%= icon_for('briefcase', :class => 'icon') %>Experience</h3>
+          <div class="modified-card">
+            <h5>Ruby on Rails developer trainee - fulltime | Kisko Labs Oy, Helsinki</h5>
+            <p>Feb 2021 - now </p>
+            <h5>Software developer intern - fulltime (remote) | Fairforce Oy, Helsinki</h5>
+            <p>Jul 2020 - Nov 2020</p>
+            <p>Develop the company web application with Ruby on Rails. Key responsibilities are: 
+            <br>• Add new features, mostly on the back-end.
+            <br>• Make tests (unit tests and system test).
+            <br>• Tech-lead of the intern development team.</p>
+          </div>
+
+          <h3 class="title"><%= icon_for('laptop-code', :class => 'icon') %>Technical knowledge</h3>
+          <div class="modified-card">
+            <h5>Web frameworks</h5>
+            <p>• Ruby on Rails
+            <br>• React/ReactNative</p>
+            <h5>Databases</h5>
+            <p>• PostgreSQL
+            <br>• MySQL
+            <br>• Firebase</p>
+            <h5>Networking</h5>
+            <p>• Configure servers, routers, TCP/IP, LAN technology</p>
+            <h5>Others</h5>
+            <p>• Git
+            <br>• Microsoft Office 365</p>
+          </div>
+
+          <h3 class="title"><%= icon_for('school', :class => 'icon') %>Education</h3>
+          <div class="modified-card">
+            <h5>South-Eastern Finland UAS | Bachelor of Engineering in Information Technology</h5>
+            <p>Aug 2017 - Jul 2021
+            <br>GPA: 4.41/5.00</p> 
+          </div>
+        </div>
+        <%= image_tag "pngegg.png", :class => "col-sm d-none d-sm-block deco-img" %>
       </div>
     </div>
     

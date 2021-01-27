@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resource :home, only: [ :index ]
   
   resource :contact, only: [ :show ], controller: 'contact'
-  resource :about, only: [ :show ], controller: 'about'
+  resource :about, only: [ :show ], controller: 'about' do
+    put 'download'
+  end
 
 end
