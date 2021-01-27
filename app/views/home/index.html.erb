@@ -1,21 +1,30 @@
 <div class="home-page">
-  <div class="row">
+  <div class="row home-content">
     <div class="col-sm-4 d-none d-sm-block photo-content">
-      <%= image_tag "yellow-background.jpg", :class => "home-photo-background img-responsive" %>
       <%= image_tag "me.jpg", :class => "home-photo img-responsive" %>
     </div>
     
     <div class="col-12 col-sm">
       
+      <h1 class="resume-title">tien nguyen</h1>
+      <div class="row">
+        <p class="col-sm"><%= icon_for('map-marker-alt') %>: Espoo, Finland</p>
+        <p class="col-sm"><%= icon_for('envelope')%>: nhttien2609@gmail.com</p>
+        <p class="col-sm"><%= icon_for('phone')%>: +358 46 532 6894</p>
+      </div>
       <div class="modified-card">
-        <h1 class="resume-title">Tien Nguyen</h1>
-        <h3>Thesis Worker</h3>
+        <h3>currently, i am a thesis worker</h3>
+        <br>
         <p>Hardworking, careful, responsible and committed are the top keywords I would use to describe myself. With a get-it-done attitude, I believe to better myself everyday at what I am doing and deliver results on-time. I learn as I go and I am always open to pick up new technology.</p>
+        <br>
+        <h5>Read more about me <%= link_to "here", about_path %>.</h5>
       </div>
 
       <div class="modified-card">
-        <h3>See me on social media!</h3>
-        
+        <h3>Check me out!</h3>
+        <%= link_to icon_for('github', type: :brands), "https://github.com/ttienism", :target => "_blank", :class => "icon" %>
+        <%= link_to icon_for('linkedin-in', type: :brands), "https://www.linkedin.com/in/ttienism/", :target => "_blank", :class => "icon" %>
+        <%= link_to icon_for('facebook', type: :brands), "https://facebook.com/ttienism", :target => "_blank", :class => "icon" %>
       </div>
 
     </div>
