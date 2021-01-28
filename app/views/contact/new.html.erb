@@ -1,20 +1,28 @@
 <div class="page contact-content">
-  <h1 class="resume-title">contact me!</h1>
   <div class="row">
-    <%= form_with model: @contact, url: contact_path, method: :post, class: 'col-sm-7' do |f| %>
-      <div>
-        <%= f.label :name %>
-        <%= f.text_field :name, class: 'field', :required => true %>
-      </div>
-      <div>
-        <%= f.label :email %>
-        <%= f.text_field :email, class: 'field', :required => true %>
-      </div>
-      <div>
-        <%= f.label :message %>
-        <%= f.text_area :message, class: 'textarea__long'%>
-      </div>
-      <%= f.submit class: "button" %>
-    <% end %>
+    <%= image_tag "source.gif", :class => "col-sm-4 d-none d-sm-block phone-photo" %>
+    <div class="col-sm-7">
+      <%= form_with model: @contact, url: contact_path, method: :post do |f| %>
+        <h1 class="resume-title">contact me!</h1>
+        <div>
+          <%= f.label :name %>
+          <%= f.text_field :name, class: 'field', :required => true %>
+        </div>
+        <div>
+          <%= f.label :email %>
+          <%= f.text_field :email, class: 'field', :required => true %>
+        </div>
+        <div>
+          <%= f.label :message %>
+          <%= f.text_area :message, class: 'textarea__long'%>
+        </div>
+        <p style="font-size: 12px">This will notify me by email. I'll reach back to you so please remember to leave me your email!</p>
+        <%= f.submit "Save", class: "button" %>
+      <% end %>
+      <h5 style="margin-top: 30px">You can also reach me by social medias</h5>
+      <%= link_to icon_for('linkedin-in', type: :brands), "https://www.linkedin.com/in/ttienism/", :target => "_blank", :class => "icon" %>
+      <%= link_to icon_for('facebook', type: :brands), "https://facebook.com/ttienism", :target => "_blank", :class => "icon" %>
+      <p style="margin-top: 30px">Thank you <3</p>
+    </div>
   </div>
 </div>
